@@ -1,0 +1,157 @@
+// Place your settings in the file "User/Preferences.sublime-settings", which
+// overrides the settings in here.
+//
+// Settings may also be placed in file type specific options files, for
+// example, in Packages/Python/Python.sublime-settings for python files.
+{
+    // Note that the font_face and font_size are overridden in the platform
+    // specific settings file, for example, "Preferences (Linux).sublime-settings".
+    // Because of this, setting them here will have no effect: you must set them
+    // in your User File Preferences.
+    "font_size": 18,
+
+    // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
+    // "subpixel_antialias", "no_round" (OS X only), "gdi" (Windows only) and
+    // "directwrite" (Windows only)
+    "font_options": ["subpixel_antialias"],
+
+    // Columns in which to display vertical rulers
+    "rulers": [80, 120],
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true,
+
+    // Set to true to draw a border around the visible rectangle on the minimap.
+    // The color of the border will be determined by the "minimapBorder" key in
+    // the color scheme
+    "draw_minimap_border": true,
+
+    // Always visualise the viewport on the minimap, as opposed to only
+    // showing it on mouse over
+    "always_show_minimap_viewport": true,
+
+    // If enabled, will highlight any line with a caret
+    "highlight_line": true,
+
+    // These settings control the size of the caret
+    "caret_extra_top": 1,
+    "caret_extra_bottom": 1,
+    "caret_extra_width": 2,
+
+    // Set to false to disable scrolling past the end of the buffer.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
+    "scroll_past_end": false,
+
+    // Set to "none" to turn off drawing white space, "selection" to draw only the
+    // white space within the selection, and "all" to draw all white space
+    "draw_white_space": "all",
+
+    // Set to true to removing trailing white space on save
+    "trim_trailing_white_space_on_save": true,
+
+    // Set to true to ensure the last line of the file ends in a newline
+    // character when saving
+    "ensure_newline_at_eof_on_save": true,
+
+    // The encoding to use when the encoding can't be determined automatically.
+    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
+    "fallback_encoding": "UTF-u",
+
+    // Determines what character(s) are used to terminate each line in new files.
+    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
+    // 'unix' (LF only).
+    "default_line_ending": "unix",
+
+    // By default, shift+tab will only unindent if the selection spans
+    // multiple lines. When pressing shift+tab at other times, it'll insert a
+    // tab character - this allows tabs to be inserted when tab_completion is
+    // enabled. Set this to true to make shift+tab always unindent, instead of
+    // inserting tabs.
+    "shift_tab_unindent": true,
+
+    //
+    // User Interface Settings
+    //
+
+    // Controls side bar animation when expanding or collapsing folders
+    "tree_animation_enabled": false,
+
+    // Controls animation throughout the application
+    "animation_enabled": false,
+
+    // Makes tabs with modified files more visible
+    "highlight_modified_tabs": true,
+
+    // Show folders in the side bar in bold
+    "bold_folder_labels": true,
+
+    // Display file encoding in the status bar
+    "show_encoding": true,
+
+    // Display line endings in the status bar
+    "show_line_endings": true,
+
+    //
+    // Application Behavior Settings
+    //
+
+    // folder_exclude_patterns and file_exclude_patterns control which files
+    // are listed in folders on the side bar. These can also be set on a per-
+    // project basis.
+    "folder_exclude_patterns": [
+        ".bundle",
+        ".git",
+        ".hg",
+        ".librarian",
+        ".tmp",
+        ".svn",
+        "CVS",
+        "node_modules"
+    ],
+    "file_exclude_patterns": [
+        "*.a",
+        "*.class",
+        "*.db",
+        "*.dll",
+        "*.dylib",
+        "*.exe",
+        "*.idb",
+        "*.lib",
+        "*.ncb",
+        "*.o",
+        "*.obj",
+        "*.pdb",
+        "*.psd",
+        "*.pyc",
+        "*.pyo",
+        "*.sdf",
+        "*.so",
+        "*.sublime-workspace",
+        "*.suo",
+        ".DS_Store"
+    ],
+
+    // These files will still show up in the side bar, but won't be included in
+    // Goto Anything or Find in Files
+    "binary_file_patterns": [
+        "*.dds",
+        "*.eot",
+        "*.gif",
+        "*.ico",
+        "*.jar",
+        "*.jpeg",
+        "*.jpg",
+        "*.pdf",
+        "*.png",
+        "*.swf",
+        "*.tga",
+        "*.ttf",
+        "*.zip"
+    ],
+
+
+    // List any packages to ignore here. When removing entries from this list,
+    // a restart may be required if the package contains plugins.
+    "ignored_packages": ["Vintage"]
+}
